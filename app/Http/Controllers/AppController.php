@@ -11,6 +11,16 @@ class AppController extends Controller
         $name = "Kamran";
         $age = "22";
 
-        return view("welcome", compact("name", "age"));
+        #using compact
+        // return view("welcome", compact("name", "age"));
+
+        #usign associative array
+          return view("welcome", 
+          array(
+            'name1' => $name,
+             'age' => $age
+            )
+          );
+
     }
 }
