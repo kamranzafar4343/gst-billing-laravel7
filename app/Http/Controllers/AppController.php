@@ -15,12 +15,15 @@ class AppController extends Controller
         // return view("welcome", compact("name", "age"));
 
         #usign associative array
-          return view("welcome", 
-          array(
-            'name1' => $name,
-             'age' => $age
-            )
-          );
+        //   return view("welcome", 
+        //   array(
+        //     'name1' => $name,
+        //      'age' => $age
+        //     )
+        //   );
+
+        #with method
+        // return view("welcome")->with('name1', $name)->with('age', $age);
 
     }
 }
