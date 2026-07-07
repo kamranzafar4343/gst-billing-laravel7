@@ -25,5 +25,11 @@ class AppController extends Controller
         #with method
         // return view("welcome")->with('name1', $name)->with('age', $age);
 
+        #usign associative array (2nd method)
+        $data['name'] = 'Kamran';
+        $data['age'] = '22';
+        
+        return view("welcome", $data);
+
     }
 }
